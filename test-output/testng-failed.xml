@@ -10,8 +10,6 @@
       <class name="tests.LoginTestCases">
         <methods>
           <include name="loginWithIncorrectPassword"/>
-          <include name="setup"/>
-          <include name="login"/>
         </methods>
       </class> <!-- tests.LoginTestCases -->
     </classes>

@@ -10,7 +10,7 @@ public class ConfigDataProvider {
 	public ConfigDataProvider()
 	{	
 		
-		File f =new File("C:/Users/pc/workspace1/parallelframework/configuration/config.properties");
+		File f =new File("./configuration/config.properties");
 		
 		try {
 			FileInputStream fis = new FileInputStream(f);

@@ -2,49 +2,58 @@ package tests;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import BrowserFactory.LocalDriverManager;
+import pages.IndexPage;
 import pages.LoginPage;
+import pages.MobilePage;
+import pages.MyAccountsPage;
+import pages.RegistrationPage;
 
 
-public class LoginTestCases extends Testbase {
-
+public class LoginTestCases {
+	
+	
+	IndexPage Index;
+	MyAccountsPage MyAccount;
+	LoginPage login;
+	
 	public LoginTestCases() {
-		// TODO Auto-generated constructor stub
+	
 	}
-
+	
 	@Test
 	public void login()
 	{
-		driver=LocalDriverManager.getDriver();
+		WebDriver driver=LocalDriverManager.getDriver();
 		driver.get("http://live.guru99.com/index.php/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		String Email="random_kp27@gmail.com";
-		
+		Index=new IndexPage(driver);
 		MyAccount=Index.clickOnAccount().
 		clickOnLogin().
 		login(Email, "123456");
 		
 		SoftAssert Assert=new SoftAssert();
 		Assert.assertEquals(MyAccount.getContactInfo()[1], Email);
-		
-		
+	
 	}
 	
 	@Test
 	public void loginWithIncorrectPassword()
 	{
-		driver=LocalDriverManager.getDriver();
+		WebDriver driver=LocalDriverManager.getDriver();
 		driver.get("http://live.guru99.com/index.php/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		String Email="random_kp27@gmail.com";
-		
+		Index=new IndexPage(driver);
 		login=Index.clickOnAccount().
 		clickOnLogin().
 		loginUnsuccessful(Email, "1234567");

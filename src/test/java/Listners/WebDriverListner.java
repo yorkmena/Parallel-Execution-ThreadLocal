@@ -5,8 +5,14 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
+import pages.IndexPage;
+import pages.LoginPage;
+import pages.MobilePage;
+import pages.MyAccountsPage;
+import pages.RegistrationPage;
 import BrowserFactory.LocalDriverFactory;
 import BrowserFactory.LocalDriverManager;
+import Resources.utility;
 
 public class WebDriverListner implements IInvokedMethodListener {
 	
@@ -16,8 +22,10 @@ public class WebDriverListner implements IInvokedMethodListener {
             System.out.println(browserName);
             WebDriver driver = LocalDriverFactory.createInstance(browserName);
             LocalDriverManager.setWebDriver(driver);
+            
+          
+              
         }
-		
 	}
 
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {

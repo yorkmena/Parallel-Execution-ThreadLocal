@@ -3,23 +3,41 @@ package tests;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import BrowserFactory.LocalDriverManager;
 import pages.IndexPage;
+import pages.LoginPage;
+import pages.MobilePage;
+import pages.MyAccountsPage;
 import pages.RegistrationPage;
 
-public class RegistrationTestCases extends Testbase {
+public class RegistrationTestCases {
+	
+	IndexPage Index;
+	MobilePage Mobile;
+	RegistrationPage Registration;
+	MyAccountsPage MyAccount; 
+	LoginPage login;
+	
+	
+	
 
 	@Test
 	public void registration()
 	{
+		WebDriver driver=LocalDriverManager.getDriver();
 		driver.get("http://live.guru99.com/index.php/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String email="random_"+randomStringGenerator(4)+"@gmail.com";
 		System.out.println(email);
+		
+		Registration=new RegistrationPage(driver);
+		
 		MyAccount=Registration.registrationSuccessful("Ashish", "Middle", "Mathur", email, "123456", "123456");
 		
 		Assert.assertEquals(MyAccount.getsuccessfulMessage(), "Thank you for registering with Main Website Store.");
@@ -29,9 +47,12 @@ public class RegistrationTestCases extends Testbase {
 	@Test
 	public void registrationWithExistingEmail() throws InterruptedException
 	{
+		WebDriver driver=LocalDriverManager.getDriver();
 		driver.get("http://live.guru99.com/index.php/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		Registration=new RegistrationPage(driver);
 		
 		Registration=Registration.registrationUnSuccessful("Ashish", "Middle", "Mathur", "ashish@gmail.com", "123456", "123456");
 		Thread.sleep(4000);
@@ -42,11 +63,14 @@ public class RegistrationTestCases extends Testbase {
 	@Test
 	public void verifyAccountInfoAfterRegistration()
 	{
+		WebDriver driver=LocalDriverManager.getDriver();
 		driver.get("http://live.guru99.com/index.php/"); 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		String email="random_"+randomStringGenerator(4)+"@gmail.com";
+		
+		Registration=new RegistrationPage(driver);
 		MyAccount=Registration.registrationSuccessful("Ashish", "Middle", "Mathur", email, "123456", "123456");
 		
 		String contactInfo[]=MyAccount.getContactInfo();

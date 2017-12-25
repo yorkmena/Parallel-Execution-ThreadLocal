@@ -22,8 +22,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.model.Test;
 
+import BrowserFactory.LocalDriverManager;
 import Resources.utility;
-
 import pages.IndexPage;
 import pages.LoginPage;
 import pages.MobilePage;
@@ -59,16 +59,17 @@ public class Testbase {
 		extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 	}
 	
-	 /* @Parameters("browser")
+	  //@Parameters("browser")
 	  @BeforeMethod
-	  public void beforeMethod(String browser,Method method) {
+	  public void beforeMethod() {
 
-	  logger=extent.startTest(this.getClass().getSimpleName()+"::"+method.getName()+"- "+browser, method.getName());
+	 // logger=extent.startTest(this.getClass().getSimpleName()+"::"+method.getName()+"- "+browser, method.getName());
 		    
-	  Browserfactory browserfactory=new Browserfactory(driver);
-	  driver=browserfactory.getBrowser(browser);
+	//  Browserfactory browserfactory=new Browserfactory(driver);
 	  
-	  logger.log(LogStatus.PASS, "Browser Launched Successfully");
+	  WebDriver driver = LocalDriverManager.getDriver();
+	  
+	 // logger.log(LogStatus.PASS, "Browser Launched Successfully");
 	
 	  Index=new IndexPage(driver);
 	  Mobile=new MobilePage(driver);
