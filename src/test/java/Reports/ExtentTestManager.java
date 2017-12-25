@@ -14,7 +14,7 @@ public class ExtentTestManager {
 	static ExtentReports extent=ExtentManager.getReporter(filePath);
 	static ExtentTest test;
 	
-	static Map<Integer,ExtentTest> testMap = new HashMap();
+	static Map<Integer,ExtentTest> testMap = new HashMap<Integer, ExtentTest>();
 	
 	public synchronized static ExtentTest startTest(String testName, String desc){
 		
@@ -25,16 +25,10 @@ public class ExtentTestManager {
 	
 	public synchronized static void endTest(ExtentTest test){
 		extent.endTest(test);
-		
 	}
 	
 	public synchronized static ExtentTest getTest(){
-		
-		return test;
-		
-		
+		return testMap.get((int)Thread.currentThread().getId());
 		
 	} 
-	
-	
 }

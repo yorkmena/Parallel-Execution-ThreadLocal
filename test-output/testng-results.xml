@@ -2,56 +2,56 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="99359" started-at="2017-12-25T06:10:02Z" finished-at="2017-12-25T06:11:42Z">
+  <suite name="Suite" duration-ms="100384" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:34:18Z">
     <groups>
     </groups>
-    <test name="Test Chrome" duration-ms="57895" started-at="2017-12-25T06:10:02Z" finished-at="2017-12-25T06:11:00Z">
+    <test name="Test Chrome" duration-ms="62343" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:33:40Z">
       <class name="tests.LoginTestCases">
-        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@1593948d]" name="login" duration-ms="11635" started-at="2017-12-25T11:40:02Z" finished-at="2017-12-25T11:40:14Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@1593948d]" name="login" duration-ms="12230" started-at="2017-12-25T19:02:38Z" finished-at="2017-12-25T19:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@1593948d]" name="loginWithIncorrectPassword" duration-ms="8435" started-at="2017-12-25T11:40:15Z" finished-at="2017-12-25T11:40:23Z">
+        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@1593948d]" name="loginWithIncorrectPassword" duration-ms="9520" started-at="2017-12-25T19:02:51Z" finished-at="2017-12-25T19:03:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorrectPassword -->
       </class> <!-- tests.LoginTestCases -->
       <class name="tests.RegistrationTestCases">
-        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registration" duration-ms="10948" started-at="2017-12-25T11:40:24Z" finished-at="2017-12-25T11:40:35Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registration" duration-ms="11939" started-at="2017-12-25T19:03:01Z" finished-at="2017-12-25T19:03:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registrationWithExistingEmail" duration-ms="13185" started-at="2017-12-25T11:40:36Z" finished-at="2017-12-25T11:40:49Z">
+        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registrationWithExistingEmail" duration-ms="15233" started-at="2017-12-25T19:03:14Z" finished-at="2017-12-25T19:03:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithExistingEmail -->
-        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="verifyAccountInfoAfterRegistration" duration-ms="9651" started-at="2017-12-25T11:40:50Z" finished-at="2017-12-25T11:41:00Z">
+        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="verifyAccountInfoAfterRegistration" duration-ms="9667" started-at="2017-12-25T19:03:30Z" finished-at="2017-12-25T19:03:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountInfoAfterRegistration -->
       </class> <!-- tests.RegistrationTestCases -->
     </test> <!-- Test Chrome -->
-    <test name="Test Firefox" duration-ms="99359" started-at="2017-12-25T06:10:02Z" finished-at="2017-12-25T06:11:42Z">
+    <test name="Test Firefox" duration-ms="100384" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:34:18Z">
       <class name="tests.LoginTestCases">
-        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="login" duration-ms="22705" started-at="2017-12-25T11:40:02Z" finished-at="2017-12-25T11:40:25Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="login" duration-ms="20786" started-at="2017-12-25T19:02:38Z" finished-at="2017-12-25T19:02:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="loginWithIncorrectPassword" duration-ms="18953" started-at="2017-12-25T11:40:26Z" finished-at="2017-12-25T11:40:45Z">
+        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="loginWithIncorrectPassword" duration-ms="20664" started-at="2017-12-25T19:02:59Z" finished-at="2017-12-25T19:03:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorrectPassword -->
       </class> <!-- tests.LoginTestCases -->
       <class name="tests.RegistrationTestCases">
-        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registration" duration-ms="17085" started-at="2017-12-25T11:40:45Z" finished-at="2017-12-25T11:41:03Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registration" duration-ms="18071" started-at="2017-12-25T19:03:21Z" finished-at="2017-12-25T19:03:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registrationWithExistingEmail" duration-ms="20922" started-at="2017-12-25T11:41:03Z" finished-at="2017-12-25T11:41:24Z">
+        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registrationWithExistingEmail" duration-ms="21456" started-at="2017-12-25T19:03:39Z" finished-at="2017-12-25T19:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithExistingEmail -->
-        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="verifyAccountInfoAfterRegistration" duration-ms="17226" started-at="2017-12-25T11:41:24Z" finished-at="2017-12-25T11:41:41Z">
+        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="verifyAccountInfoAfterRegistration" duration-ms="16844" started-at="2017-12-25T19:04:01Z" finished-at="2017-12-25T19:04:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountInfoAfterRegistration -->

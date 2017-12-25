@@ -22,9 +22,7 @@ public class WebDriverListner implements IInvokedMethodListener {
             System.out.println(browserName);
             WebDriver driver = LocalDriverFactory.createInstance(browserName);
             LocalDriverManager.setWebDriver(driver);
-            
-          
-              
+                          
         }
 	}
 

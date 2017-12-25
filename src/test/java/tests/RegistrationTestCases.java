@@ -23,9 +23,6 @@ public class RegistrationTestCases {
 	MyAccountsPage MyAccount; 
 	LoginPage login;
 	
-	
-	
-
 	@Test
 	public void registration()
 	{
@@ -93,6 +90,5 @@ public class RegistrationTestCases {
 		}
 		return sb.toString();
 	}
-	
 	
 }

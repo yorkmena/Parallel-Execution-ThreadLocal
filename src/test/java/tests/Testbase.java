@@ -107,7 +107,6 @@ public class Testbase {
 	  @AfterSuite
 	  public void afterSuite()
 	  {
-		  
 		   extent.flush();
 		   //extent.close();
 		 
