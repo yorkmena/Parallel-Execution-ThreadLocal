@@ -1,8 +1,6 @@
 package Reports;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -10,7 +8,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class ExtentTestManager {
 
-	static String filePath=System.getProperty("user.dir"+"/Report/myReport.html");
+	static String filePath=System.getProperty("user.dir")+"/Report/myReport.html";
 	static ExtentReports extent=ExtentManager.getReporter(filePath);
 	static ExtentTest test;
 	
@@ -23,8 +21,16 @@ public class ExtentTestManager {
 		return test;
 	}
 	
+	public synchronized static ExtentTest startTest(String testName){
+		return startTest(testName,"");
+	}
+	
 	public synchronized static void endTest(ExtentTest test){
 		extent.endTest(test);
+	}
+	
+	public synchronized static void endTest(){
+		extent.endTest(testMap.get((int)Thread.currentThread().getId()));
 	}
 	
 	public synchronized static ExtentTest getTest(){
