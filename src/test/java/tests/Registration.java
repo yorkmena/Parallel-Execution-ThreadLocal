@@ -15,7 +15,7 @@ import pages.MobilePage;
 import pages.MyAccountsPage;
 import pages.RegistrationPage;
 
-public class Registration {
+public class Registration extends Testbase1{
 	
 	IndexPage Index;
 	MobilePage Mobile;

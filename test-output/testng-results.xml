@@ -2,60 +2,280 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="100384" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:34:18Z">
+  <suite name="Suite" duration-ms="102484" started-at="2017-12-28T13:24:32Z" finished-at="2017-12-28T13:26:15Z">
     <groups>
     </groups>
-    <test name="Test Chrome" duration-ms="62343" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:33:40Z">
-      <class name="tests.LoginTestCases">
-        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@1593948d]" name="login" duration-ms="12230" started-at="2017-12-25T19:02:38Z" finished-at="2017-12-25T19:02:50Z">
+    <test name="Test Chrome" duration-ms="37815" started-at="2017-12-28T13:24:32Z" finished-at="2017-12-28T13:25:10Z">
+      <class name="tests.Login">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Login@55f3ddb1]" name="beforeMethod" is-config="true" duration-ms="138" started-at="2017-12-28T18:54:32Z" finished-at="2017-12-28T18:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Login.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.Login@55f3ddb1]" name="login" duration-ms="11135" started-at="2017-12-28T18:54:33Z" finished-at="2017-12-28T18:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@1593948d]" name="loginWithIncorrectPassword" duration-ms="9520" started-at="2017-12-25T19:02:51Z" finished-at="2017-12-25T19:03:00Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Login@55f3ddb1]" name="AfterMehod" is-config="true" duration-ms="393" started-at="2017-12-28T18:54:44Z" finished-at="2017-12-28T18:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login()[pri:0, instance:tests.Login@55f3ddb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Login@55f3ddb1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-12-28T18:54:45Z" finished-at="2017-12-28T18:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Login.loginWithIncorrectPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.Login@55f3ddb1]" name="loginWithIncorrectPassword" duration-ms="9118" started-at="2017-12-28T18:54:45Z" finished-at="2017-12-28T18:54:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorrectPassword -->
-      </class> <!-- tests.LoginTestCases -->
-      <class name="tests.RegistrationTestCases">
-        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registration" duration-ms="11939" started-at="2017-12-25T19:03:01Z" finished-at="2017-12-25T19:03:13Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Login@55f3ddb1]" name="AfterMehod" is-config="true" duration-ms="66" started-at="2017-12-28T18:54:55Z" finished-at="2017-12-28T18:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithIncorrectPassword status=SUCCESS method=Login.loginWithIncorrectPassword()[pri:0, instance:tests.Login@55f3ddb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+      </class> <!-- tests.Login -->
+      <class name="tests.Registration">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="138" started-at="2017-12-28T18:54:32Z" finished-at="2017-12-28T18:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.registration()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="registration()[pri:0, instance:tests.Registration@8bd1b6a]" name="registration" duration-ms="11723" started-at="2017-12-28T18:54:33Z" finished-at="2017-12-28T18:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="registrationWithExistingEmail" duration-ms="15233" started-at="2017-12-25T19:03:14Z" finished-at="2017-12-25T19:03:29Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@8bd1b6a]" name="AfterMehod" is-config="true" duration-ms="116" started-at="2017-12-28T18:54:45Z" finished-at="2017-12-28T18:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registration status=SUCCESS method=Registration.registration()[pri:0, instance:tests.Registration@8bd1b6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:54:45Z" finished-at="2017-12-28T18:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.registrationWithExistingEmail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.Registration@8bd1b6a]" name="registrationWithExistingEmail" duration-ms="13889" started-at="2017-12-28T18:54:45Z" finished-at="2017-12-28T18:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithExistingEmail -->
-        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@4cc0edeb]" name="verifyAccountInfoAfterRegistration" duration-ms="9667" started-at="2017-12-25T19:03:30Z" finished-at="2017-12-25T19:03:40Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@8bd1b6a]" name="AfterMehod" is-config="true" duration-ms="57" started-at="2017-12-28T18:55:00Z" finished-at="2017-12-28T18:55:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registrationWithExistingEmail status=SUCCESS method=Registration.registrationWithExistingEmail()[pri:0, instance:tests.Registration@8bd1b6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.Registration@8bd1b6a]" name="verifyAccountInfoAfterRegistration" duration-ms="9517" started-at="2017-12-28T18:55:00Z" finished-at="2017-12-28T18:55:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountInfoAfterRegistration -->
-      </class> <!-- tests.RegistrationTestCases -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:55:00Z" finished-at="2017-12-28T18:55:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.verifyAccountInfoAfterRegistration()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@8bd1b6a]" name="AfterMehod" is-config="true" duration-ms="157" started-at="2017-12-28T18:55:10Z" finished-at="2017-12-28T18:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAccountInfoAfterRegistration status=SUCCESS method=Registration.verifyAccountInfoAfterRegistration()[pri:0, instance:tests.Registration@8bd1b6a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+      </class> <!-- tests.Registration -->
     </test> <!-- Test Chrome -->
-    <test name="Test Firefox" duration-ms="100384" started-at="2017-12-25T13:32:38Z" finished-at="2017-12-25T13:34:18Z">
-      <class name="tests.LoginTestCases">
-        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="login" duration-ms="20786" started-at="2017-12-25T19:02:38Z" finished-at="2017-12-25T19:02:59Z">
+    <test name="Test Firefox" duration-ms="64644" started-at="2017-12-28T13:25:10Z" finished-at="2017-12-28T13:26:15Z">
+      <class name="tests.Login">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Login@42d80b78]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:55:10Z" finished-at="2017-12-28T18:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Login.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.Login@42d80b78]" name="login" duration-ms="21720" started-at="2017-12-28T18:55:10Z" finished-at="2017-12-28T18:55:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.LoginTestCases@3532ec19]" name="loginWithIncorrectPassword" duration-ms="20664" started-at="2017-12-25T19:02:59Z" finished-at="2017-12-25T19:03:20Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Login@42d80b78]" name="AfterMehod" is-config="true" duration-ms="37" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login()[pri:0, instance:tests.Login@42d80b78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Login@42d80b78]" name="beforeMethod" is-config="true" duration-ms="46" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Login.loginWithIncorrectPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginWithIncorrectPassword()[pri:0, instance:tests.Login@42d80b78]" name="loginWithIncorrectPassword" duration-ms="20161" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorrectPassword -->
-      </class> <!-- tests.LoginTestCases -->
-      <class name="tests.RegistrationTestCases">
-        <test-method status="PASS" signature="registration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registration" duration-ms="18071" started-at="2017-12-25T19:03:21Z" finished-at="2017-12-25T19:03:39Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Login@42d80b78]" name="AfterMehod" is-config="true" duration-ms="34" started-at="2017-12-28T18:55:53Z" finished-at="2017-12-28T18:55:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithIncorrectPassword status=SUCCESS method=Login.loginWithIncorrectPassword()[pri:0, instance:tests.Login@42d80b78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+      </class> <!-- tests.Login -->
+      <class name="tests.Registration">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@3bfdc050]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:55:10Z" finished-at="2017-12-28T18:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.registration()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="registration()[pri:0, instance:tests.Registration@3bfdc050]" name="registration" duration-ms="21928" started-at="2017-12-28T18:55:10Z" finished-at="2017-12-28T18:55:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="registrationWithExistingEmail" duration-ms="21456" started-at="2017-12-25T19:03:39Z" finished-at="2017-12-25T19:04:01Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@3bfdc050]" name="AfterMehod" is-config="true" duration-ms="82" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registration status=SUCCESS method=Registration.registration()[pri:0, instance:tests.Registration@3bfdc050] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@3bfdc050]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.registrationWithExistingEmail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="registrationWithExistingEmail()[pri:0, instance:tests.Registration@3bfdc050]" name="registrationWithExistingEmail" duration-ms="24211" started-at="2017-12-28T18:55:33Z" finished-at="2017-12-28T18:55:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithExistingEmail -->
-        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.RegistrationTestCases@68c4039c]" name="verifyAccountInfoAfterRegistration" duration-ms="16844" started-at="2017-12-25T19:04:01Z" finished-at="2017-12-25T19:04:18Z">
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@3bfdc050]" name="AfterMehod" is-config="true" duration-ms="31" started-at="2017-12-28T18:55:57Z" finished-at="2017-12-28T18:55:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registrationWithExistingEmail status=SUCCESS method=Registration.registrationWithExistingEmail()[pri:0, instance:tests.Registration@3bfdc050] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Registration@3bfdc050]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-12-28T18:55:57Z" finished-at="2017-12-28T18:55:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Registration.verifyAccountInfoAfterRegistration()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyAccountInfoAfterRegistration()[pri:0, instance:tests.Registration@3bfdc050]" name="verifyAccountInfoAfterRegistration" duration-ms="16996" started-at="2017-12-28T18:55:57Z" finished-at="2017-12-28T18:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountInfoAfterRegistration -->
-      </class> <!-- tests.RegistrationTestCases -->
+        <test-method status="PASS" signature="AfterMehod(org.testng.ITestResult)[pri:0, instance:tests.Registration@3bfdc050]" name="AfterMehod" is-config="true" duration-ms="36" started-at="2017-12-28T18:56:15Z" finished-at="2017-12-28T18:56:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAccountInfoAfterRegistration status=SUCCESS method=Registration.verifyAccountInfoAfterRegistration()[pri:0, instance:tests.Registration@3bfdc050] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMehod -->
+      </class> <!-- tests.Registration -->
     </test> <!-- Test Firefox -->
   </suite> <!-- Suite -->
 </testng-results>

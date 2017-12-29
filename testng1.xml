@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-
+<suite name="Suite" parallel="classes">
+<listeners>
+<listener class-name="Listners.WebDriverListner"></listener>
+</listeners>
   <test name="Test Chrome">
   <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="tests.LoginTestCases"/>
-      <class name="tests.RegistrationTestCases"/>
+      <class name="tests.Login"/>
+      <class name="tests.Registration"/>
       
     </classes>
   </test> <!-- Test -->
@@ -14,8 +16,8 @@
     <test name="Test Firefox">
   <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="tests.LoginTestCases"/>
-      <class name="tests.RegistrationTestCases"/>
+      <class name="tests.Login"/>
+      <class name="tests.Registration"/>
       
     </classes>
   </test> <!-- Test -->

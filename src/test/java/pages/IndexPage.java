@@ -8,6 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Reports.ExtentTestManager;
+
+import com.relevantcodes.extentreports.LogStatus;
+
 public class IndexPage {
 
 WebDriver driver;
@@ -43,6 +47,7 @@ WebDriver driver;
 	public IndexPage clickOnAccount()
 	{
 		account.click();
+		ExtentTestManager.getTest().log(LogStatus.INFO, "Click on Account");
 		return this;
 	}
 	
@@ -55,6 +60,7 @@ WebDriver driver;
 	public LoginPage clickOnLogin()
 	{
 		Login.click();
+		ExtentTestManager.getTest().log(LogStatus.INFO, "Click on Login");
 		return new LoginPage(driver);
 	}
 	

@@ -12,6 +12,7 @@ public class ExtentTestManager {
 	static ExtentReports extent=ExtentManager.getReporter(filePath);
 	static ExtentTest test;
 	
+	
 	static Map<Integer,ExtentTest> testMap = new HashMap<Integer, ExtentTest>();
 	
 	public synchronized static ExtentTest startTest(String testName, String desc){
