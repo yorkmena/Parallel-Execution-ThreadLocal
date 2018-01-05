@@ -40,7 +40,6 @@ public class ParallelMethodsTest {
     @AfterMethod
     public void afterEachTest(ITestResult result) {
         if (!result.isSuccess()) {
-        	
             test.log(LogStatus.FAIL, result.getThrowable());
         }
         
