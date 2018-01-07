@@ -1,48 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="Test Chrome(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="Listners.WebDriverListner"/>
+  </listeners>
+  <test name="Test Chrome(failed)" parallel="classes">
     <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="tests.Login">
         <methods>
-          <include name="loginWithIncorrectPassword"/>
           <include name="beforeMethod"/>
           <include name="AfterMehod"/>
           <include name="login"/>
         </methods>
       </class> <!-- tests.Login -->
-      <class name="tests.Registration">
-        <methods>
-          <include name="registrationWithExistingEmail"/>
-          <include name="beforeMethod"/>
-          <include name="verifyAccountInfoAfterRegistration"/>
-          <include name="AfterMehod"/>
-          <include name="registration"/>
-        </methods>
-      </class> <!-- tests.Registration -->
     </classes>
   </test> <!-- Test Chrome(failed) -->
-  <test name="Test Firefox(failed)" parallel="tests">
-    <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="tests.Login">
-        <methods>
-          <include name="loginWithIncorrectPassword"/>
-          <include name="beforeMethod"/>
-          <include name="AfterMehod"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- tests.Login -->
-      <class name="tests.Registration">
-        <methods>
-          <include name="registrationWithExistingEmail"/>
-          <include name="beforeMethod"/>
-          <include name="verifyAccountInfoAfterRegistration"/>
-          <include name="AfterMehod"/>
-          <include name="registration"/>
-        </methods>
-      </class> <!-- tests.Registration -->
-    </classes>
-  </test> <!-- Test Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

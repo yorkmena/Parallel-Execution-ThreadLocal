@@ -36,7 +36,7 @@ public class ParallelMethodsTest {
         test.log(LogStatus.ERROR, "Log from threadId: " + Thread.currentThread().getId());
         ExtentTestManager.endTest();
     }
-	
+	/*
     @AfterMethod
     public void afterEachTest(ITestResult result) {
         if (!result.isSuccess()) {
@@ -45,5 +45,5 @@ public class ParallelMethodsTest {
         
         extent.endTest(test);
         extent.flush();
-    }
+    }*/
 }

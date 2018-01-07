@@ -4,23 +4,15 @@
 <listeners>
 <listener class-name="Listners.WebDriverListner"></listener>
 </listeners>
-  <test name="Test Chrome">
-  <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="tests.Login"/>
-      <!--class name="tests.Registration"/>  -->
-      
-    </classes>
-  </test> <!--
+
   
     <test name="Test Firefox">
   <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="tests.Login"/>
+      <!--class name="tests.Login"/>  -->
       <class name="tests.Registration"/>
-      
     </classes>
   </test> 
-   -->
+   
   
 </suite> 
