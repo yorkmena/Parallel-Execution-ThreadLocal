@@ -1,80 +1,95 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mycompany.parallelframework</groupId>
-  <artifactId>parallelframework</artifactId>
-  <version>1.00</version>
-  <packaging>jar</packaging>
+	<groupId>com.mycompany.parallelframework</groupId>
+	<artifactId>parallelframework</artifactId>
+	<version>1.00</version>
+	<packaging>jar</packaging>
 
-  <name>parallelframework</name>
-  <url>http://maven.apache.org</url>
+	<name>parallelframework</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.level>1.8</jdk.level>
-    <suiteXmlFile>testng1.xml</suiteXmlFile>
-    <suiteXmlFile>testng2.xml</suiteXmlFile>
-  </properties>
-  
-    <build>
-    <plugins>
-    
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
-        <configuration>
-          <source>${jdk.level}</source>
-          <target>${jdk.level}</target>
-        </configuration>
-      </plugin>
-      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.19.1</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-      
-    </plugins>
-    
-    
-  </build>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.level>1.8</jdk.level>
 
-  <dependencies>
-  
-    <dependency>
-     
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.6.0</version> 
-    </dependency>
-    
-    <dependency>
-	<groupId>org.testng</groupId>
-	<artifactId>testng</artifactId>
-	<version>6.11</version>
-    </dependency>
-    
+
+		<!-- Mention the Suite XML files to run below. You can Override these files 
+			by passing command line parameters -->
+		<first_suite_xml>testng1.xml</first_suite_xml>
+		<second_suite_xml>testng2.xml</second_suite_xml>
+		<all_suite_Xmls>${first_suite_xml}</all_suite_Xmls>
+		<suiteXmlFile>${all_suite_Xmls}</suiteXmlFile>
+		<!-- The properties mentioned here are for the putp -->
+
+	</properties>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>${jdk.level}</source>
+					<target>${jdk.level}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+
+					<systemPropertyVariables>
+						<browser>chrome</browser>
+					</systemPropertyVariables>
+
+					<parallel>methods</parallel>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
+					
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<dependencies>
+
+		<dependency>
+
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-    <dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.5</version>
-    </dependency>
-			
- 
-    <dependency>
-    <groupId>com.relevantcodes</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>2.41.2</version>
-    </dependency>
-    
-  </dependencies>
-  	
- 
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+	</dependencies>
+
+
 </project>
