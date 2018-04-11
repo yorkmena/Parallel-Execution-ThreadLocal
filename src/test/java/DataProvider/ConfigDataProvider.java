@@ -36,12 +36,21 @@ public class ConfigDataProvider {
 	
 	public String getchromePath()
 	{
-		return p.getProperty("chromepath");
+		String os=System.getProperty("os.name");
+		if (os.startsWith("w"))
+			return p.getProperty("chromepath");
+
+		else
+			return p.getProperty("chromepath_linux");
 	}
 	
 	public String getgeckoPath()
 	{
-		return p.getProperty("firefoxpath");
+		String os=System.getProperty("os.name");
+		if (os.startsWith("w"))
+			return p.getProperty("firefoxpath");
+		else
+		return p.getProperty("firefoxpath_linux");
 	}
 	
 	public String getIEPath()

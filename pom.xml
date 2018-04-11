@@ -27,7 +27,6 @@
 
 	<build>
 		<plugins>
-
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
@@ -36,6 +35,7 @@
 					<target>${jdk.level}</target>
 				</configuration>
 			</plugin>
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -47,7 +47,7 @@
 						<browser>chrome</browser>
 					</systemPropertyVariables>
 
-					<parallel>methods</parallel>
+					<parallel>none</parallel>
 
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
