@@ -16,3 +16,4 @@ node('master') {
         echo 'Running tests'
     }
 }
+}
