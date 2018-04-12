@@ -10,10 +10,8 @@ node('master') {
 
     withMaven(maven: 'Maven 3') {
               dir('Parallel-Execution-ThreadLocal') {
-                sh 'mvn clean test -Dbrowser=chrome'
+                sh 'mvn clean test'
               }
-
-        echo 'Running tests'
     }
 }
 }
