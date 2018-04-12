@@ -9,7 +9,7 @@ node('master') {
     stage('Run tests') {
 
     withMaven(maven: 'Maven 3') {
-              dir('Parallel-Execution-ThreadLocal') {
+              dir('Parallel-Execution-ThreadLocal/') {
                 sh 'mvn clean test'
               }
     }
