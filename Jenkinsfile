@@ -9,7 +9,7 @@ node('master') {
     stage('Run tests') {
 
     withMaven(maven: 'Maven 3') {
-                sh 'mvn clean test -Dbrowser=${borwser}'
+                sh 'mvn clean test -Dbrowser=${browser}'
               }
     }
 }
