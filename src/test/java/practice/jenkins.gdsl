@@ -1,0 +1,21 @@
+package practice
+
+import groovy.json.JsonSlurper
+
+//def inputFile = new File('./File.json')
+def inputFile = new File('/home/ubuntu/singleClick/File.json')
+
+def inputJSON = new JsonSlurper().parse(inputFile)
+def keys = inputJSON.keySet()
+
+for (String service : keys){
+    println (service)
+    def redis_array = inputJSON.getAt(service).getAt("Redis");
+    for (String redis : redis_array){
+        println (redis)
+        sh 'gcloud compute instances start tk-perf-ms-hotel-price-engine-redis-2'
+    }
+
+
+}
+
